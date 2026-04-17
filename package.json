@@ -1,6 +1,6 @@
 {
   "name": "microyamljs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A minimalist, robust, indentation-based hierarchical data parser for YAML-like formats.",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
