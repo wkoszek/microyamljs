@@ -1,6 +1,6 @@
 {
   "name": "microyamljs",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A minimalist, robust, indentation-based hierarchical data parser for YAML-like formats.",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -8,7 +8,9 @@
     "import": "./dist/index.mjs",
     "require": "./dist/index.cjs"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "type": "commonjs",
   "scripts": {
     "build": "esbuild src/index.js --format=cjs --outfile=dist/index.cjs && esbuild src/index.js --format=esm --outfile=dist/index.mjs",
