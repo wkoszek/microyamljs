@@ -12,7 +12,8 @@
   "type": "commonjs",
   "scripts": {
     "build": "esbuild src/index.js --format=cjs --outfile=dist/index.cjs && esbuild src/index.js --format=esm --outfile=dist/index.mjs",
-    "test": "npm run build && node test_parser.cjs"
+    "test": "npm run build && node test_parser.cjs",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "yaml",
@@ -21,7 +22,7 @@
     "hierarchy",
     "config"
   ],
-  "author": "",
+  "author": "Adam Koszek <wkoszek@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
