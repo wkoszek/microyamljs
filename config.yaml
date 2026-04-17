@@ -1,0 +1,31 @@
+# Main application configuration
+server:
+  host: localhost
+  port: 8080
+  timeout: 30 # seconds
+  password: CHANGE_ME
+
+database:
+  adapter: postgresql
+  pool: 5
+  options:
+    ssl: true
+    logging: false
+
+# Feature flags
+features:
+  cache: true
+  search: false
+
+# Long strings
+metadata:
+  description: |
+    This is a very long
+    multi-line string that
+    preserves newlines.
+    
+    It even supports empty lines
+    and complex formatting.
+  legal: |
+    Copyright 2026.
+    All rights reserved.
